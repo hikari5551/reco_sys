@@ -1,0 +1,150 @@
+2026-04-24 15:48:37,426 - ERROR - 初始化失败：type object 'GlobalConsts' has no attribute 'WEBSOCKET_HOST'
+2026-04-24 15:53:43,636 - ERROR - 初始化失败：type object 'GlobalConsts' has no attribute 'WEBSOCKET_HOST'
+2026-04-24 16:25:43,659 - ERROR - 初始化失败：type object 'GlobalConsts' has no attribute 'WEBSOCKET_HOST'
+2026-04-24 16:25:56,529 - ERROR - 初始化失败：type object 'GlobalConsts' has no attribute 'WEBSOCKET_HOST'
+2026-04-24 16:33:50,633 - ERROR - 导入失败：argument of type 'NoneType' is not iterable
+2026-04-24 16:34:51,849 - ERROR - 导入失败：cannot import name 'AlarmSystem' from 'utils' (E:\PyCharm 2026.1\新建文件夹\utils\__init__.py)
+2026-04-24 16:36:07,218 - ERROR - 导入失败：argument of type 'NoneType' is not iterable
+2026-04-24 16:39:48,933 - ERROR - 导入失败：argument of type 'NoneType' is not iterable
+2026-04-24 16:41:44,346 - ERROR - 导入失败：argument of type 'NoneType' is not iterable
+2026-04-24 16:43:48,477 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-24 16:43:48,480 - ERROR - 导入失败：cannot import name 'YOLOSHOWVSWindow' from 'yoloshow.Windows' (E:\PyCharm 2026.1\新建文件夹\yoloshow\Windows.py)
+2026-04-24 16:45:25,844 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-24 16:45:25,900 - INFO - 加载了 0 张测试图片
+2026-04-24 16:45:25,982 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-24 16:45:25,984 - ERROR - 崩溃：Traceback (most recent call last):
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 110, in <module>
+    run_start()
+    ~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 101, in run_start
+    start()
+    ~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 77, in start
+    initialize_global_variables()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 40, in initialize_global_variables
+    yoloshow = YOLOSHOWWindow()
+  File "E:\PyCharm 2026.1\新建文件夹\yoloshow\Windows.py", line 35, in __init__
+    self.alarm = AlarmSystem()
+                 ~~~~~~~~~~~^^
+TypeError: 'module' object is not callable
+
+2026-04-24 16:49:56,801 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-24 16:49:56,823 - INFO - 加载了 0 张测试图片
+2026-04-24 16:49:56,904 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-24 16:49:56,905 - ERROR - 崩溃：Traceback (most recent call last):
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 110, in <module>
+    run_start()
+    ~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 101, in run_start
+    start()
+    ~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 77, in start
+    initialize_global_variables()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 40, in initialize_global_variables
+    yoloshow = YOLOSHOWWindow()
+  File "E:\PyCharm 2026.1\新建文件夹\yoloshow\Windows.py", line 35, in __init__
+    self.alarm = AlarmSystem()
+                 ~~~~~~~~~~~^^
+TypeError: 'module' object is not callable
+
+2026-04-24 16:53:04,753 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-24 16:53:04,774 - INFO - 加载了 0 张测试图片
+2026-04-24 16:53:04,856 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-24 16:53:04,857 - ERROR - 崩溃：Traceback (most recent call last):
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 110, in <module>
+    run_start()
+    ~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 101, in run_start
+    start()
+    ~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 77, in start
+    initialize_global_variables()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 40, in initialize_global_variables
+    yoloshow = YOLOSHOWWindow()
+  File "E:\PyCharm 2026.1\新建文件夹\yoloshow\Windows.py", line 35, in __init__
+    self.alarm = AlarmSystem()
+                 ~~~~~~~~~~~^^
+TypeError: 'module' object is not callable
+
+2026-04-24 16:57:15,920 - ERROR - 崩溃：Traceback (most recent call last):
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 110, in <module>
+    run_start()
+    ~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 101, in run_start
+    start()
+    ~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 77, in start
+    initialize_global_variables()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 40, in initialize_global_variables
+    yoloshow = YOLOSHOWWindow()
+  File "E:\PyCharm 2026.1\新建文件夹\yoloshow\Windows.py", line 138, in __init__
+    self.image_loader = ImageLoader(image_dir="test_images", loop=True, delay=1.0)
+                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PyCharm 2026.1\新建文件夹\yoloshow\Windows.py", line 35, in __init__
+    self.lock = threading.Lock()
+                ^^^^^^^^^
+NameError: name 'threading' is not defined. Did you forget to import 'threading'?
+
+2026-04-24 16:59:43,302 - ERROR - YOLOSHOW 加载失败：No module named 'yolosam.WebSocketSysIntegration'
+2026-04-24 17:00:27,014 - ERROR - YOLOSHOW 加载失败：No module named 'yolosam.WebSocketSysIntegration'
+2026-04-24 17:00:27,126 - ERROR - 程序错误：NameError：name 'threading' is not defined
+2026-04-24 17:00:27,126 - ERROR - Traceback (most recent call last):
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 140, in <module>
+    run_start()
+    ~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 129, in run_start
+    start()
+    ~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 84, in start
+    initialize_global_variables()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 62, in initialize_global_variables
+    yoloshow = YOLOSHOWWindow()
+  File "E:\PyCharm 2026.1\新建文件夹\yoloshow\Windows.py", line 138, in __init__
+    self.image_loader = ImageLoader(image_dir="test_images", loop=True, delay=1.0)
+                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PyCharm 2026.1\新建文件夹\yoloshow\Windows.py", line 35, in __init__
+    self.lock = threading.Lock()
+                ^^^^^^^^^
+NameError: name 'threading' is not defined. Did you forget to import 'threading'?
+
+2026-04-24 17:00:27,126 - INFO - 错误发生，程序已停止运行。请检查错误日志。
+2026-04-24 17:01:00,419 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-24 17:01:01,059 - ERROR - 程序错误：NameError：name 'threading' is not defined
+2026-04-24 17:01:01,059 - ERROR - Traceback (most recent call last):
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 140, in <module>
+    run_start()
+    ~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 129, in run_start
+    start()
+    ~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 84, in start
+    initialize_global_variables()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 62, in initialize_global_variables
+    yoloshow = YOLOSHOWWindow()
+  File "E:\PyCharm 2026.1\新建文件夹\yoloshow\Windows.py", line 138, in __init__
+    self.image_loader = ImageLoader(image_dir="test_images", loop=True, delay=1.0)
+                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PyCharm 2026.1\新建文件夹\yoloshow\Windows.py", line 35, in __init__
+    self.lock = threading.Lock()
+                ^^^^^^^^^
+NameError: name 'threading' is not defined. Did you forget to import 'threading'?
+
+2026-04-24 17:01:01,059 - INFO - 错误发生，程序已停止运行。请检查错误日志。
+2026-04-24 17:02:51,251 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-24 17:02:51,905 - INFO - 加载了 0 张测试图片
+2026-04-24 17:02:55,155 - WARNING - ⚠️ 使用模拟模式，模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-24 17:02:55,156 - ERROR - 系统初始化失败：type object 'GlobalConsts' has no attribute 'WEBSOCKET_HOST'
+2026-04-24 17:02:55,157 - INFO - YOLOSHOW -- 未启用
+2026-04-24 17:02:55,157 - ERROR - 测试图片文件夹为空！
+2026-04-24 17:02:59,712 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-24 17:04:52,145 - INFO - 加载了 1 张测试图片
+2026-04-24 17:04:55,269 - WARNING - ⚠️ 使用模拟模式，模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-24 17:04:55,269 - ERROR - 系统初始化失败：type object 'GlobalConsts' has no attribute 'WEBSOCKET_HOST'
+2026-04-24 17:04:55,269 - INFO - YOLOSHOW -- 未启用
+2026-04-24 17:04:59,084 - INFO - YOLOSHOW -- 所有服务已停止！
