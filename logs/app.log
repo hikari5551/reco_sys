@@ -1,2 +1,0 @@
-2026-04-24 15:48:37,426 - ERROR - 初始化失败：type object 'GlobalConsts' has no attribute 'WEBSOCKET_HOST'
-2026-04-24 15:53:43,636 - ERROR - 初始化失败：type object 'GlobalConsts' has no attribute 'WEBSOCKET_HOST'
