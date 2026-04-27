@@ -1,30 +1,17 @@
-import sys
 import os
-import time
 import threading
 from PySide6.QtWidgets import QMainWindow, QLabel, QVBoxLayout, QWidget
 from PySide6.QtGui import QImage, QPixmap
 from PySide6.QtCore import QTimer, Qt
 import cv2
+
+from AlarmSystem import AlarmSystem
 from utils import globalDict, LoggerCat
+from yolo import YOLOSystem
 
-# 1. 直接在本文件里定义AlarmSystem，避免导入错误
-class AlarmSystem:
-    def __init__(self):
-        self.logger = LoggerCat()
-        self.save_dir = "alarms"
-        os.makedirs(self.save_dir, exist_ok=True)
 
-    def trigger_alarm(self, frame, detection):
-        cls = detection["class"]
-        conf = detection["confidence"]
-        self.logger.error(f"🚨 检测到异物：{cls} ({conf})")
-        name = f"alarm_{int(time.time())}.jpg"
-        path = os.path.join(self.save_dir, name)
-        cv2.imwrite(path, frame)
-        return path
 
-# 2. 直接在本文件里定义ImageLoader，避免导入错误
+#直接在本文件里定义ImageLoader，避免导入错误
 class ImageLoader:
     def __init__(self, image_dir="test_images", loop=True, delay=1.0):
         self.logger = LoggerCat()
@@ -73,55 +60,6 @@ class ImageLoader:
 
     def stop(self):
         self.running = False
-
-# 3. 直接在本文件里定义YOLOSystem，避免导入错误
-class YOLOSystem:
-    def __init__(self, model_path="yolov8l-best.pt"):
-        self.logger = LoggerCat()
-        self.model = None
-        self.classes = ["stone", "plastic_bag", "branch", "metal_object"]
-        self.conf_threshold = 0.5
-        self.iou_threshold = 0.45
-        try:
-            from ultralytics import YOLO
-            # 强制关闭联网更新检查
-            os.environ['ULTRALYTICS_OFFLINE'] = '1'
-            self.model = YOLO(model_path)
-            self.logger.info(f"✅ YOLO模型加载成功：{model_path}")
-        except Exception as e:
-            self.logger.warning(f"⚠️ 使用模拟模式，模型加载失败：{e}")
-            self.model = None
-
-    def detect(self, frame):
-        if self.model is None:
-            return []
-        try:
-            results = self.model.predict(frame, conf=self.conf_threshold, iou=self.iou_threshold, verbose=False)
-            detections = []
-            for result in results:
-                for box in result.boxes:
-                    x1, y1, x2, y2 = map(int, box.xyxy[0])
-                    conf = round(float(box.conf[0]), 2)
-                    cls_id = int(box.cls[0])
-                    detections.append({
-                        "bbox": (x1, y1, x2, y2),
-                        "confidence": conf,
-                        "class": self.classes[cls_id] if cls_id < len(self.classes) else "unknown"
-                    })
-            globalDict.set_value("detections", detections)
-            return detections
-        except Exception as e:
-            self.logger.error(f"推理失败：{e}")
-            return []
-
-    def draw_detections(self, frame, detections):
-        img = frame.copy()
-        for det in detections:
-            x1, y1, x2, y2 = det["bbox"]
-            label = f"{det['class']} {det['confidence']:.2f}"
-            cv2.rectangle(img, (x1, y1), (x2, y2), (0, 0, 255), 2)
-            cv2.putText(img, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
-        return img
 
 # 主窗口类
 class YOLOSHOWWindow(QMainWindow):

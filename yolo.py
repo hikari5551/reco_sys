@@ -4,7 +4,7 @@ from utils import LoggerCat, globalDict
 
 
 class YOLOSystem:
-    def __init__(self, model_path="models/yolo_railway.pt"):
+    def __init__(self, model_path="models/yolov8l-best.pt"):
         """
         机车车顶异物识别YOLO系统
         :param model_path: 训练好的YOLO模型路径
@@ -12,7 +12,7 @@ class YOLOSystem:
         self.logger = LoggerCat()
         self.model = None
         self.classes = ["stone", "plastic_bag", "branch", "metal_object"]
-        self.conf_threshold = 0.5
+        self.conf_threshold = 0.2
         self.iou_threshold = 0.45
         self._load_model(model_path)
 
@@ -21,9 +21,9 @@ class YOLOSystem:
         try:
             from ultralytics import YOLO
             self.model = YOLO(model_path)
-            self.logger.info(f"✅ YOLO模型加载成功：{model_path}")
+            self.logger.info(f" YOLO模型加载成功：{model_path}")
         except ImportError:
-            self.logger.warning("⚠️ ultralytics未安装，使用模拟推理模式")
+            self.logger.warning(" ultralytics未安装，使用模拟推理模式")
             self.model = None
         except Exception as e:
             self.logger.error(f"模型加载失败：{e}")

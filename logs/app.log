@@ -378,3 +378,221 @@ ConnectionError:   Download failure for https://github.com/ultralytics/assets/re
 2026-04-27 13:30:26,921 - INFO - YOLOSHOW -- 初始化完成
 2026-04-27 13:30:29,563 - INFO - WebSocket已清理
 2026-04-27 13:30:29,564 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 16:10:41,706 - INFO - 加载了 2 张测试图片
+2026-04-27 16:10:43,576 - INFO - ✅ YOLO模型加载成功：yolov8l-best.pt
+2026-04-27 16:10:43,578 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 16:10:49,973 - INFO - WebSocket已清理
+2026-04-27 16:10:49,974 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 16:17:06,246 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 16:17:51,041 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 16:18:06,015 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 16:19:31,104 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 16:19:31,118 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 16:24:04,937 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 16:25:20,356 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 16:27:41,744 - INFO -  YOLO模型加载成功：models/yolov8l-best.pt
+2026-04-27 16:30:04,391 - INFO - 加载了 3 张测试图片
+2026-04-27 16:30:05,775 - WARNING - ⚠️ 使用模拟模式，模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 16:30:05,778 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 16:30:09,682 - INFO - WebSocket已清理
+2026-04-27 16:30:09,683 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 16:31:50,803 - INFO - 加载了 3 张测试图片
+2026-04-27 16:31:50,804 - ERROR - 程序错误：NameError：name 'YOLOSystem' is not defined
+2026-04-27 16:31:50,805 - ERROR - Traceback (most recent call last):
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 140, in <module>
+    run_start()
+    ~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 129, in run_start
+    start()
+    ~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 84, in start
+    initialize_global_variables()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 62, in initialize_global_variables
+    yoloshow = YOLOSHOWWindow()
+  File "E:\PyCharm 2026.1\新建文件夹\yoloshow\Windows.py", line 91, in __init__
+    self.yolo = YOLOSystem(model_path="yolov8l-best.pt")
+                ^^^^^^^^^^
+NameError: name 'YOLOSystem' is not defined
+
+2026-04-27 16:31:50,805 - INFO - 错误发生，程序已停止运行。请检查错误日志。
+2026-04-27 16:32:23,628 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 16:32:25,494 - INFO -  YOLO模型加载成功：models/yolov8l-best.pt
+2026-04-27 16:32:25,522 - INFO - 加载了 3 张测试图片
+2026-04-27 16:32:25,610 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 16:32:25,610 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 16:32:27,241 - INFO - WebSocket已清理
+2026-04-27 16:32:27,241 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 16:38:38,747 - INFO -  YOLO模型加载成功：models/yolov8l-best.pt
+2026-04-27 16:38:38,774 - INFO - 加载了 3 张测试图片
+2026-04-27 16:38:38,868 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 16:38:38,869 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 16:38:43,415 - INFO - WebSocket已清理
+2026-04-27 16:38:43,416 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 16:39:16,106 - INFO -  YOLO模型加载成功：models/yolov8l-best.pt
+2026-04-27 16:45:03,066 - INFO -  YOLO模型加载成功：models/yolov8l-best.pt
+2026-04-27 16:45:12,079 - INFO -  YOLO模型加载成功：models/yolov8l-best.pt
+2026-04-27 16:49:05,318 - INFO -  YOLO模型加载成功：models/yolov8l-best.pt
+2026-04-27 16:49:05,345 - INFO - 加载了 4 张测试图片
+2026-04-27 16:49:05,434 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 16:49:05,434 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 16:49:10,600 - INFO - WebSocket已清理
+2026-04-27 16:49:10,600 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 16:52:23,132 - INFO -  YOLO模型加载成功：models/yolov8l-best.pt
+2026-04-27 16:52:23,161 - INFO - 成功读取图片，尺寸：(1706, 1279, 3)
+2026-04-27 16:52:24,454 - INFO - 检测到目标数量：1
+2026-04-27 16:52:24,454 - INFO -   - 类别：stone，置信度：0.3，坐标：(519, 664, 898, 1029)
+2026-04-27 16:52:24,461 - INFO - 结果已保存到：E:\PyCharm 2026.1\新建文件夹\yolo_results\result.jpg
+2026-04-27 16:52:24,587 - INFO - 
+按任意键关闭图片窗口...
+2026-04-27 16:52:26,430 - INFO - 加载了 4 张测试图片
+2026-04-27 16:52:26,512 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 16:52:26,513 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 16:52:28,337 - INFO - WebSocket已清理
+2026-04-27 16:52:28,337 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 16:53:16,043 - INFO -  YOLO模型加载成功：models/yolov8l-best.pt
+2026-04-27 16:53:16,070 - INFO - 成功读取图片，尺寸：(1706, 1279, 3)
+2026-04-27 16:53:17,124 - INFO - 检测到目标数量：1
+2026-04-27 16:53:17,124 - INFO -   - 类别：stone，置信度：0.3，坐标：(519, 664, 898, 1029)
+2026-04-27 16:53:17,131 - INFO - 结果已保存到：E:\PyCharm 2026.1\新建文件夹\yolo_results\result.jpg
+2026-04-27 16:53:17,251 - INFO - 
+按任意键关闭图片窗口...
+2026-04-27 16:53:19,657 - INFO - 加载了 4 张测试图片
+2026-04-27 16:53:19,740 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 16:53:19,740 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 16:53:24,952 - INFO - WebSocket已清理
+2026-04-27 16:53:24,952 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 16:54:11,352 - INFO -  YOLO模型加载成功：models/yolov8l-best.pt
+2026-04-27 16:54:11,374 - ERROR - 程序错误：PermissionError：[Errno 13] Permission denied: 'test_images'
+2026-04-27 16:54:11,375 - ERROR - Traceback (most recent call last):
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 190, in <module>
+    run_start()
+    ~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 176, in run_start
+    run_yolo_demo()
+    ~~~~~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 45, in run_yolo_demo
+    frame = cv2.imread(test_image_path)
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\utils\patches.py", line 33, in imread
+    file_bytes = np.fromfile(filename, np.uint8)
+PermissionError: [Errno 13] Permission denied: 'test_images'
+
+2026-04-27 16:54:11,375 - INFO - 错误发生，程序已停止运行。请检查错误日志。
+2026-04-27 16:56:46,094 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 16:56:49,010 - INFO -  YOLO模型加载成功：models/yolov8l-best.pt
+2026-04-27 16:56:49,031 - INFO - 开始批量检测，共找到 4 张图片
+2026-04-27 16:56:49,033 - INFO - 
+处理图片：1.jpg，尺寸：(418, 720, 3)
+2026-04-27 16:56:50,120 - INFO - 检测到目标数量：0
+2026-04-27 16:56:50,121 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_1.jpg
+2026-04-27 16:56:50,122 - INFO - 
+处理图片：2.jpg，尺寸：(342, 656, 3)
+2026-04-27 16:56:50,229 - INFO - 检测到目标数量：0
+2026-04-27 16:56:50,230 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_2.jpg
+2026-04-27 16:56:50,231 - INFO - 
+处理图片：3.jpg，尺寸：(372, 588, 3)
+2026-04-27 16:56:50,362 - INFO - 检测到目标数量：0
+2026-04-27 16:56:50,363 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_3.jpg
+2026-04-27 16:56:50,372 - INFO - 
+处理图片：4.jpg，尺寸：(1706, 1279, 3)
+2026-04-27 16:56:50,610 - INFO - 检测到目标数量：1
+2026-04-27 16:56:50,610 - INFO - - 类别：stone，置信度：0.3，坐标：(519, 664, 898, 1029)
+2026-04-27 16:56:50,617 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_4.jpg
+2026-04-27 16:56:50,617 - INFO - 
+所有图片检测完成！
+2026-04-27 16:56:50,668 - INFO - 加载了 4 张测试图片
+2026-04-27 16:56:51,343 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 16:56:51,343 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 16:56:53,538 - INFO - WebSocket已清理
+2026-04-27 16:56:53,538 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 16:58:34,415 - INFO -  YOLO模型加载成功：models/yolov8l-best.pt
+2026-04-27 16:58:34,437 - INFO - 开始批量检测，共找到 4 张图片
+2026-04-27 16:58:34,439 - INFO - 
+处理图片：1.jpg，尺寸：(418, 720, 3)
+2026-04-27 16:58:35,478 - INFO - 检测到目标数量：0
+2026-04-27 16:58:35,479 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_1.jpg
+2026-04-27 16:58:35,480 - INFO - 
+处理图片：2.jpg，尺寸：(342, 656, 3)
+2026-04-27 16:58:35,589 - INFO - 检测到目标数量：0
+2026-04-27 16:58:35,590 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_2.jpg
+2026-04-27 16:58:35,591 - INFO - 
+处理图片：3.jpg，尺寸：(372, 588, 3)
+2026-04-27 16:58:35,719 - INFO - 检测到目标数量：0
+2026-04-27 16:58:35,721 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_3.jpg
+2026-04-27 16:58:35,727 - INFO - 
+处理图片：4.jpg，尺寸：(1706, 1279, 3)
+2026-04-27 16:58:35,864 - INFO - 检测到目标数量：1
+2026-04-27 16:58:35,864 - INFO - - 类别：stone，置信度：0.3，坐标：(519, 664, 898, 1029)
+2026-04-27 16:58:35,870 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_4.jpg
+2026-04-27 16:58:35,870 - INFO - 
+所有图片检测完成！
+2026-04-27 16:58:35,893 - INFO - 加载了 4 张测试图片
+2026-04-27 16:58:35,977 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 16:58:35,977 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 17:00:03,027 - INFO - WebSocket已清理
+2026-04-27 17:00:03,027 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 17:00:29,882 - INFO -  YOLO模型加载成功：models/yolov8l-best.pt
+2026-04-27 17:00:29,905 - INFO - 开始批量检测，共找到 4 张图片
+2026-04-27 17:00:29,907 - INFO - 
+处理图片：1.jpg，尺寸：(418, 720, 3)
+2026-04-27 17:00:30,962 - INFO - 检测到目标数量：0
+2026-04-27 17:00:30,963 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_1.jpg
+2026-04-27 17:00:30,964 - INFO - 
+处理图片：2.jpg，尺寸：(342, 656, 3)
+2026-04-27 17:00:31,072 - INFO - 检测到目标数量：0
+2026-04-27 17:00:31,073 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_2.jpg
+2026-04-27 17:00:31,074 - INFO - 
+处理图片：3.jpg，尺寸：(372, 588, 3)
+2026-04-27 17:00:31,202 - INFO - 检测到目标数量：0
+2026-04-27 17:00:31,203 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_3.jpg
+2026-04-27 17:00:31,210 - INFO - 
+处理图片：4.jpg，尺寸：(1706, 1279, 3)
+2026-04-27 17:00:31,395 - INFO - 检测到目标数量：1
+2026-04-27 17:00:31,395 - INFO - - 类别：stone，置信度：0.3，坐标：(519, 664, 898, 1029)
+2026-04-27 17:00:31,401 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_4.jpg
+2026-04-27 17:00:31,401 - INFO - 
+所有图片检测完成！
+2026-04-27 17:00:31,430 - INFO - 加载了 4 张测试图片
+2026-04-27 17:00:31,516 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 17:00:31,517 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 17:00:35,776 - INFO - WebSocket已清理
+2026-04-27 17:00:35,776 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 17:05:55,933 - INFO -  YOLO模型加载成功：models/yolov8l-best.pt
+2026-04-27 17:05:55,955 - INFO - 开始批量检测，共找到 7 张图片
+2026-04-27 17:05:55,957 - INFO - 
+处理图片：1.jpg，尺寸：(418, 720, 3)
+2026-04-27 17:05:56,951 - INFO - 检测到目标数量：0
+2026-04-27 17:05:56,953 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_1.jpg
+2026-04-27 17:05:56,954 - INFO - 
+处理图片：2.jpg，尺寸：(342, 656, 3)
+2026-04-27 17:05:57,054 - INFO - 检测到目标数量：0
+2026-04-27 17:05:57,055 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_2.jpg
+2026-04-27 17:05:57,056 - INFO - 
+处理图片：3.jpg，尺寸：(372, 588, 3)
+2026-04-27 17:05:57,185 - INFO - 检测到目标数量：0
+2026-04-27 17:05:57,186 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_3.jpg
+2026-04-27 17:05:57,193 - INFO - 
+处理图片：4.jpg，尺寸：(1706, 1279, 3)
+2026-04-27 17:05:57,321 - INFO - 检测到目标数量：1
+2026-04-27 17:05:57,321 - INFO - - 类别：stone，置信度：0.3，坐标：(519, 664, 898, 1029)
+2026-04-27 17:05:57,327 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_4.jpg
+2026-04-27 17:05:57,333 - INFO - 
+处理图片：5.jpg，尺寸：(1706, 1279, 3)
+2026-04-27 17:05:57,480 - INFO - 检测到目标数量：1
+2026-04-27 17:05:57,480 - INFO - - 类别：stone，置信度：0.37，坐标：(480, 891, 756, 1061)
+2026-04-27 17:05:57,486 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_5.jpg
+2026-04-27 17:05:57,493 - INFO - 
+处理图片：6.jpg，尺寸：(1706, 1279, 3)
+2026-04-27 17:05:57,611 - INFO - 检测到目标数量：0
+2026-04-27 17:05:57,617 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_6.jpg
+2026-04-27 17:05:57,624 - INFO - 
+处理图片：7.jpg，尺寸：(1706, 1279, 3)
+2026-04-27 17:05:57,769 - INFO - 检测到目标数量：0
+2026-04-27 17:05:57,775 - INFO - 结果已保存：E:\PyCharm 2026.1\新建文件夹\yolo_results\result_7.jpg
+2026-04-27 17:05:57,775 - INFO - 
+所有图片检测完成！
+2026-04-27 17:05:57,800 - INFO - 加载了 7 张测试图片
+2026-04-27 17:05:57,883 - ERROR - 模型加载失败：HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/ultralytics/assets/releases/tags/v8.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2026-04-27 17:05:57,883 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 17:05:59,838 - INFO - WebSocket已清理
+2026-04-27 17:05:59,838 - INFO - YOLOSHOW -- 所有服务已停止！
