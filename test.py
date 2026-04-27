@@ -1,6 +1,5 @@
 import sys
 import os
-
 # 打印当前的路径和关键信息
 print("=== 系统路径 ===")
 print(sys.path)

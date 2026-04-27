@@ -148,3 +148,233 @@ NameError: name 'threading' is not defined. Did you forget to import 'threading'
 2026-04-24 17:04:55,269 - ERROR - 系统初始化失败：type object 'GlobalConsts' has no attribute 'WEBSOCKET_HOST'
 2026-04-24 17:04:55,269 - INFO - YOLOSHOW -- 未启用
 2026-04-24 17:04:59,084 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 12:57:09,192 - INFO - 加载了 1 张测试图片
+2026-04-27 12:57:13,832 - WARNING - ⚠️ 使用模拟模式，模型加载失败：[Errno 2] No such file or directory: 'yolov8l-best.pt'
+2026-04-27 12:57:13,835 - ERROR - 系统初始化失败：type object 'GlobalConsts' has no attribute 'WEBSOCKET_HOST'
+2026-04-27 12:57:13,835 - INFO - YOLOSHOW -- 未启用
+2026-04-27 12:57:16,276 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 13:04:54,292 - INFO - 加载了 1 张测试图片
+2026-04-27 13:04:58,322 - WARNING - ⚠️ 使用模拟模式，模型加载失败：[Errno 2] No such file or directory: 'yolov8l-best.pt'
+2026-04-27 13:04:58,323 - ERROR - 系统初始化失败：type object 'GlobalConsts' has no attribute 'WEBSOCKET_HOST'
+2026-04-27 13:04:58,323 - INFO - YOLOSHOW -- 未启用
+2026-04-27 13:05:00,191 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 13:07:12,760 - INFO - 加载了 1 张测试图片
+2026-04-27 13:07:15,853 - INFO - ✅ YOLO模型加载成功：yolov8l-best.pt
+2026-04-27 13:07:15,853 - ERROR - 系统初始化失败：type object 'GlobalConsts' has no attribute 'WEBSOCKET_HOST'
+2026-04-27 13:07:15,853 - INFO - YOLOSHOW -- 未启用
+2026-04-27 13:07:18,508 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 13:13:13,247 - INFO - 加载了 1 张测试图片
+2026-04-27 13:13:16,361 - INFO - ✅ YOLO模型加载成功：yolov8l-best.pt
+2026-04-27 13:13:16,361 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 13:13:19,521 - INFO - WebSocket已清理
+2026-04-27 13:13:19,521 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 13:16:13,586 - INFO - 加载了 2 张测试图片
+2026-04-27 13:16:16,745 - INFO - ✅ YOLO模型加载成功：yolov8l-best.pt
+2026-04-27 13:16:16,745 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 13:16:40,335 - INFO - WebSocket已清理
+2026-04-27 13:16:40,335 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 13:18:53,179 - INFO - 加载了 2 张测试图片
+2026-04-27 13:18:56,336 - INFO - ✅ YOLO模型加载成功：yolov8l-best.pt
+2026-04-27 13:18:56,337 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 13:18:59,148 - INFO - WebSocket已清理
+2026-04-27 13:18:59,148 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 13:19:46,855 - INFO - 加载了 2 张测试图片
+2026-04-27 13:19:49,986 - INFO - ✅ YOLO模型加载成功：yolov8l-best.pt
+2026-04-27 13:19:49,987 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 13:19:50,392 - ERROR - 程序错误：FileNotFoundError：2.jpg does not exist
+2026-04-27 13:19:50,392 - ERROR - Traceback (most recent call last):
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 155, in <module>
+    run_start()
+    ~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 144, in run_start
+    start()
+    ~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 113, in start
+    results = model(img_path, conf=0.25)  # 降低置信度
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\engine\model.py", line 185, in __call__
+    return self.predict(source, stream, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\engine\model.py", line 555, in predict
+    return self.predictor.predict_cli(source=source) if is_cli else self.predictor(source=source, stream=stream)
+                                                                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\engine\predictor.py", line 227, in __call__
+    return list(self.stream_inference(source, model, *args, **kwargs))  # merge list of Result into one
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 38, in generator_context
+    response = gen.send(None)
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\engine\predictor.py", line 300, in stream_inference
+    self.setup_source(source if source is not None else self.args.source)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\engine\predictor.py", line 259, in setup_source
+    self.dataset = load_inference_source(
+                   ~~~~~~~~~~~~~~~~~~~~~^
+        source=source,
+        ^^^^^^^^^^^^^^
+    ...<3 lines>...
+        channels=getattr(self.model, "ch", 3),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\data\build.py", line 300, in load_inference_source
+    dataset = LoadImagesAndVideos(source, batch=batch, vid_stride=vid_stride, channels=channels)
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\data\loaders.py", line 374, in __init__
+    raise FileNotFoundError(f"{p} does not exist")
+FileNotFoundError: 2.jpg does not exist
+
+2026-04-27 13:19:50,392 - INFO - 错误发生，程序已停止运行。请检查错误日志。
+2026-04-27 13:21:18,175 - INFO - 加载了 2 张测试图片
+2026-04-27 13:21:21,326 - INFO - ✅ YOLO模型加载成功：yolov8l-best.pt
+2026-04-27 13:21:21,327 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 13:21:21,736 - ERROR - 程序错误：FileNotFoundError：2.jpg does not exist
+2026-04-27 13:21:21,736 - ERROR - Traceback (most recent call last):
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 155, in <module>
+    run_start()
+    ~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 144, in run_start
+    start()
+    ~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 113, in start
+    results = model(img_path, conf=0.25)  # 降低置信度
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\engine\model.py", line 185, in __call__
+    return self.predict(source, stream, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\engine\model.py", line 555, in predict
+    return self.predictor.predict_cli(source=source) if is_cli else self.predictor(source=source, stream=stream)
+                                                                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\engine\predictor.py", line 227, in __call__
+    return list(self.stream_inference(source, model, *args, **kwargs))  # merge list of Result into one
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 38, in generator_context
+    response = gen.send(None)
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\engine\predictor.py", line 300, in stream_inference
+    self.setup_source(source if source is not None else self.args.source)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\engine\predictor.py", line 259, in setup_source
+    self.dataset = load_inference_source(
+                   ~~~~~~~~~~~~~~~~~~~~~^
+        source=source,
+        ^^^^^^^^^^^^^^
+    ...<3 lines>...
+        channels=getattr(self.model, "ch", 3),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\data\build.py", line 300, in load_inference_source
+    dataset = LoadImagesAndVideos(source, batch=batch, vid_stride=vid_stride, channels=channels)
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\data\loaders.py", line 374, in __init__
+    raise FileNotFoundError(f"{p} does not exist")
+FileNotFoundError: 2.jpg does not exist
+
+2026-04-27 13:21:21,736 - INFO - 错误发生，程序已停止运行。请检查错误日志。
+2026-04-27 13:25:59,653 - INFO - 加载了 2 张测试图片
+2026-04-27 13:26:02,786 - INFO - ✅ YOLO模型加载成功：yolov8l-best.pt
+2026-04-27 13:26:02,786 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 13:27:45,788 - INFO - 加载了 2 张测试图片
+2026-04-27 13:27:48,907 - INFO - ✅ YOLO模型加载成功：yolov8l-best.pt
+2026-04-27 13:27:48,908 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 13:28:12,268 - ERROR - 程序错误：ConnectionError：  Download failure for https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8n.pt. Environment is not online.
+2026-04-27 13:28:12,268 - ERROR - Traceback (most recent call last):
+  File "C:\Users\heping5551\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 1319, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heping5551\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heping5551\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heping5551\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heping5551\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Users\heping5551\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\heping5551\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1472, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\heping5551\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1003, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heping5551\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "C:\Users\heping5551\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\utils\downloads.py", line 341, in safe_download
+    with request.urlopen(url) as response:
+         ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\heping5551\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heping5551\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 489, in open
+    response = self._open(req, data)
+  File "C:\Users\heping5551\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "C:\Users\heping5551\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "C:\Users\heping5551\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\heping5551\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 1322, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 164, in <module>
+    run_start()
+    ~~~~~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 153, in run_start
+    start()
+    ~~~~~^^
+  File "E:\PyCharm 2026.1\新建文件夹\main.py", line 111, in start
+    model = YOLO("yolov8n.pt")
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\models\yolo\model.py", line 81, in __init__
+    super().__init__(model=model, task=task, verbose=verbose)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\engine\model.py", line 151, in __init__
+    self._load(model, task=task)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\engine\model.py", line 295, in _load
+    self.model, self.ckpt = attempt_load_one_weight(weights)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\nn\tasks.py", line 1549, in attempt_load_one_weight
+    ckpt, weight = torch_safe_load(weight)  # load ckpt
+                   ~~~~~~~~~~~~~~~^^^^^^^^
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\nn\tasks.py", line 1425, in torch_safe_load
+    file = attempt_download_asset(weight)  # search online if missing locally
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\utils\downloads.py", line 478, in attempt_download_asset
+    safe_download(url=f"{download_url}/{release}/{name}", file=file, min_bytes=1e5, **kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PyCharm 2026.1\新建文件夹\.venv\Lib\site-packages\ultralytics\utils\downloads.py", line 377, in safe_download
+    raise ConnectionError(emojis(f"❌  Download failure for {uri}. Environment is not online.")) from e
+ConnectionError:   Download failure for https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8n.pt. Environment is not online.
+
+2026-04-27 13:28:12,271 - INFO - 错误发生，程序已停止运行。请检查错误日志。
+2026-04-27 13:29:19,960 - INFO - 加载了 2 张测试图片
+2026-04-27 13:29:23,082 - INFO - ✅ YOLO模型加载成功：yolov8l-best.pt
+2026-04-27 13:29:23,083 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 13:30:14,073 - INFO - 加载了 2 张测试图片
+2026-04-27 13:30:17,074 - INFO - 
+程序被中断
+2026-04-27 13:30:17,075 - INFO - 错误发生，程序已停止运行。请检查错误日志。
+2026-04-27 13:30:17,087 - INFO - YOLOSHOW -- 所有服务已停止！
+2026-04-27 13:30:23,793 - INFO - 加载了 2 张测试图片
+2026-04-27 13:30:26,920 - INFO - ✅ YOLO模型加载成功：yolov8l-best.pt
+2026-04-27 13:30:26,921 - INFO - YOLOSHOW -- 初始化完成
+2026-04-27 13:30:29,563 - INFO - WebSocket已清理
+2026-04-27 13:30:29,564 - INFO - YOLOSHOW -- 所有服务已停止！
