@@ -3,6 +3,8 @@ import cv2
 import time
 from utils import LoggerCat, ConfigManager, globalDict
 
+#但是这个文件好像啥用也没有，先放着吧，以后可能会用到报警系统的功能（?)
+# 这个文件定义了一个AlarmSystem类，负责处理机车异物识别的报警逻辑。当检测到异物时，根据配置决定是否触发报警，保存截图，记录日志，并将报警信息写入全局字典供其他模块使用。你可以在YOLO检测到异物时调用这个AlarmSystem的trigger_alarm方法来执行报警操作。
 class AlarmSystem:
     def __init__(self):
         """
@@ -39,7 +41,7 @@ class AlarmSystem:
             return
 
         # 日志记录（高亮报警）
-        self.logger.error(f"🚨 异物报警！类型：{cls_name}，置信度：{conf:.2f}")
+        self.logger.error(f"异物报警！类型：{cls_name}，置信度：{conf:.2f}")
 
         # 保存报警截图
         if self.save_screenshot:

@@ -11,8 +11,9 @@ import cv2
 
 LogCat = LoggerCat()
 
-sys.path.append(os.path.join(os.getcwd(), "ui"))
+sys.path.append(os.path.join(os.getcwd(), "ui"))# 确保ui文件夹在路径中，避免导入错误
 
+# 尝试导入WebSocket集成模块，如果失败则记录错误并继续运行
 INTEGRATION_AVAILABLE = False
 try:
     from yolosam.WebSocketSys import get_yoloshow_integration
@@ -75,6 +76,8 @@ def run_yolo_demo():
             LogCat.info(f"结果已保存：{os.path.abspath(save_path)}")
 
         LogCat.info("\n所有图片检测完成！")
+        # 这里添加了一个弹窗或者日志提示，告诉用户检测完成了，结果保存在yolo_results文件夹里
+# ====================== 主程序入口和初始化 ======================
 def get_application():
     global _app
     if _app is None:
@@ -83,7 +86,7 @@ def get_application():
         _app.setStyleSheet("QFrame { border: none; }")
     return _app
 
-
+# 初始化WebSocket集成的方法，如果配置启用则创建实例并启动，否则返回None
 def initialize_yoloshow_integration():
     if not INTEGRATION_AVAILABLE:
         return None
@@ -117,7 +120,7 @@ def initialize_global_variables():
 def is_single_instance():
     shared_memory_key = "yoloshow"
     shared_memory = QSharedMemory(shared_memory_key)
-    if shared_memory.create(1):
+    if shared_memory.create(1): #尝试创建共享内存，如果成功说明是单实例，否则说明已有实例在运行
         return True, shared_memory
     else:
         return False, None

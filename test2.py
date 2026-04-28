@@ -1,3 +1,4 @@
+#这个是测试文件，主要用于测试yolo系统的检测功能，读取一张图片进行检测，并显示和保存结果。请确保在运行前已经正确配置了模型路径和测试图片路径。
 import cv2
 import os
 from yolo import yolo_system

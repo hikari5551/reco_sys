@@ -5,7 +5,7 @@ import time
 from utils import globalDict, LoggerCat
 
 class ImageLoader:
-    def __init__(self, image_dir="test_images", loop=True, delay=1.0):
+    def __init__(self, image_dir="test_images", loop=True, delay=10.0):
         """
         图片读取器
         :param image_dir: 测试图片文件夹路径

@@ -8,5 +8,4 @@
 ├── yolov8l-best.pt      # 训练好的YOLO模型  
 ├── yolo.py              # 模型推理核心模块  
 ├── main.py              # 程序入口  
-└── requirements.txt     # 依赖清单  
-
+└── requirements.txt     # 依赖清单
