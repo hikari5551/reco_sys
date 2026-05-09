@@ -1,0 +1,11 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+SQLAlchemy==2.0.36
+python-multipart==0.0.20
+Pillow==11.0.0
+aiofiles==24.1.0
+requests==2.32.3
+
+# 服务器端负责 YOLO 推理。内存较小时建议使用 yolov8n / yolov8s。
+ultralytics==8.3.51
+opencv-python-headless==4.10.0.84
